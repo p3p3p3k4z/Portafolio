@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio ^^</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white relative">
+  <!-- Navbar -->
+  <nav class="p-5 bg-black bg-opacity-80 shadow-md flex items-center">
+    <h1 class="text-xl font-bold">Mi Portafolio</h1>
+    <div class="ml-auto flex space-x-4">
+      <a href="#inicio" class="p-2 hover:text-green-400">Inicio</a>
+      <a href="#sobre-mi" class="p-2 hover:text-green-400">Sobre Mí</a>
+      <a href="#educacion" class="p-2 hover:text-green-400">Educación</a>
+      <a href="#habilidades" class="p-2 hover:text-green-400">Habilidades</a>
+      <a href="#proyectos" class="p-2 hover:text-green-400">Proyectos</a>
+      <a href="#contacto" class="p-2 hover:text-green-400">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Sección Inicio (Hero) -->
+  <section id="inicio" class="h-screen flex items-center justify-center relative z-10">
+    <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
+      <!-- Columna de texto (izquierda) -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4">¡Hola, soy Mario Ramirez!</h1>
+        <p class="text-xl md:text-2xl">Estudiante de Ingeniería en Computación</p>
+      </div>
+      <!-- Columna del GIF (derecha) -->
+      <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+        <img src="https://media.tenor.com/X6oLkn9sBewAAAAj/sparklepandalana-penguin.gif" alt="Gif de presentación" class="w-64 h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Sobre mí -->
+  <section id="sobre-mi" class="p-10 relative z-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-left mb-8">Sobre Mí</h2>
+      <p class="text-left text-lg">
+        Actualmente desarrollo pequeños proyectos para fortalecer mis habilidades en programación. 
+        Me apasiona explorar nuevas tecnologías y estar en constante aprendizaje.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Sección Educación y Certificaciones -->
+  <section id="educacion" class="p-10 relative z-10 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Educación y Certificaciones</h2>
+      <div class="flex justify-center space-x-4 mb-8">
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="utm">UTM</button>
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="hackatones">HACKATONES</button>
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="alura">ALURA</button>
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="platzi">PLATZI</button>
+      </div>
+      
+      <!-- Contenedor para certificados UTM -->
+      <div id="utm" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white text-black p-4 rounded shadow">
+          <h3 class="font-bold">Certificado UTM 1</h3>
+          <p>Descripción del certificado.</p>
+        </div>
+        <div class="bg-white text-black p-4 rounded shadow">
+          <h3 class="font-bold">Certificado UTM 2</h3>
+          <p>Descripción del certificado.</p>
+        </div>
+      </div>
+      
+      <!-- Contenedor para certificados Hackatones -->
+      <div id="hackatones" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white text-black p-4 rounded shadow">
+          <h3 class="font-bold">Certificado Hackatones 1</h3>
+          <p>Descripción del certificado.</p>
+        </div>
+      </div>
+      
+      <!-- Contenedor para certificados Alura -->
+      <div id="alura" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white text-black p-4 rounded shadow">
+          <h3 class="font-bold">Certificado Alura 1</h3>
+          <p>Descripción del certificado.</p>
+        </div>
+      </div>
+      
+      <!-- Contenedor para certificados Platzi -->
+      <div id="platzi" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white text-black p-4 rounded shadow">
+          <h3 class="font-bold">Certificado Platzi 1</h3>
+          <p>Descripción del certificado.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- Sección Habilidades Técnicas -->
+  <section id="habilidades" class="p-10 relative z-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Habilidades Técnicas</h2>
+      
+      <!-- Lenguajes -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold mb-4 text-center">Lenguajes</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C">
+          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+          <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+          <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+          <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+          <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+          <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+        </div>
+      </div>
+      
+      <!-- Bases de Datos -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold mb-4 text-center">Bases de Datos</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+          <img src="https://img.shields.io/badge/phpMyAdmin-FF6B6B?style=for-the-badge&logo=php&logoColor=white" alt="phpMyAdmin">
+          <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+        </div>
+      </div>
+      
+      <!-- Frameworks y Librerías -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-bold mb-4 text-center">Frameworks y Librerías</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
+          <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate">
+          <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+        </div>
+      </div>
+      
+      <!-- Herramientas -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-center">Herramientas</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+          <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+          <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- Sección Proyectos Realizados -->
+  <section id="proyectos" class="p-10 relative z-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-left mb-8">Proyectos Realizados</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Proyecto Ejemplo -->
+        <div class="p-5 bg-gray-800 rounded shadow">
+          <h3 class="text-2xl font-bold mb-2">PettiApp</h3>
+          <img src="https://github.com/p3p3p3k4z/PettiApp/raw/main/info_proyecto/capturas/inicio.png" alt="PettiApp">
+          <p class="mb-4">Gestor de insumos para una cafetería</p>
+          <a href="#" class="text-green-400 hover:underline">Ver más</a>
+        </div>
+        <div class="p-5 bg-gray-800 rounded shadow">
+          <h3 class="text-2xl font-bold mb-2">Analisis de Algoritmos</h3>
+          <img src="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos/raw/main/preview/ventana_grafica.png" alt="Analisis de Algoritmos">
+          <p class="mb-4">Análisis para distintos tipos de algoritmos de ordenamiento</p>
+          <a href="#" class="text-green-400 hover:underline">Ver más</a>
+        </div>
+        <div class="p-5 bg-gray-800 rounded shadow">
+          <h3 class="text-2xl font-bold mb-2">Script Debian</h3>
+          <img src="https://github.com/p3p3p3k4z/script_Debian/raw/main/inicio.png" alt="Script Debian">
+          <p class="mb-4">Asistente para instalar/gestionar paquetes en sistemas Linux</p>
+          <a href="#" class="text-green-400 hover:underline">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Contacto -->
+  <section id="contacto" class="p-10 text-center relative z-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-8">Contacto</h2>
+      <p class="text-lg">
+        Mi LinkedIn: <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" class="text-green-400 hover:underline" target="_blank">https://www.linkedin.com/in/mario-ramirez-abab9a318/</a>
+      </p>
+      <p class="text-lg">
+        Mi GitHub: <a href="https://github.com/p3p3p3k4z" class="text-green-400 hover:underline" target="_blank">https://github.com/p3p3p3k4z</a>
+      </p>
+      <p class="text-lg">
+        Puedes escribirme a: <a href="mailto:ragm030119@gs.utm.mx" class="text-green-400 hover:underline">ragm030119@gs.utm.mx</a>
+      </p>
+    </div>
+  </section>
+</body>
+</html>
