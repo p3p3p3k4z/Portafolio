@@ -59,8 +59,7 @@
         <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="alura">ALURA</button>
         <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="platzi">PLATZI</button>
       </div>
-      
-      <!-- Contenedor para certificados UTM -->
+
       <div id="utm" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         <div class="bg-white text-black p-4 rounded shadow">
           <h3 class="font-bold">Certificado UTM 1</h3>
@@ -71,24 +70,21 @@
           <p>Descripción del certificado.</p>
         </div>
       </div>
-      
-      <!-- Contenedor para certificados Hackatones -->
+
       <div id="hackatones" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         <div class="bg-white text-black p-4 rounded shadow">
           <h3 class="font-bold">Certificado Hackatones 1</h3>
           <p>Descripción del certificado.</p>
         </div>
       </div>
-      
-      <!-- Contenedor para certificados Alura -->
+
       <div id="alura" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         <div class="bg-white text-black p-4 rounded shadow">
           <h3 class="font-bold">Certificado Alura 1</h3>
           <p>Descripción del certificado.</p>
         </div>
       </div>
-      
-      <!-- Contenedor para certificados Platzi -->
+
       <div id="platzi" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="bg-white text-black p-4 rounded shadow">
           <h3 class="font-bold">Certificado Platzi 1</h3>
@@ -111,6 +107,7 @@
           <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C">
           <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
           <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+          <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
           <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
           <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
           <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
@@ -134,66 +131,59 @@
         <h3 class="text-2xl font-bold mb-4 text-center">Frameworks y Librerías</h3>
         <div class="flex flex-wrap justify-center gap-2">
           <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
-          <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate">
           <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
         </div>
       </div>
       
       <!-- Herramientas -->
-      <div>
+      <div class="subsection">
         <h3 class="text-2xl font-bold mb-4 text-center">Herramientas</h3>
-        <div class="flex flex-wrap justify-center gap-2">
+        <div class="badges-group">
           <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
           <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
           <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
         </div>
       </div>
-      
     </div>
   </section>
   
-  <!-- Sección Proyectos Realizados -->
-  <section id="proyectos" class="p-10 relative z-10">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-left mb-8">Proyectos Realizados</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Proyecto Ejemplo -->
-        <div class="p-5 bg-gray-800 rounded shadow">
-          <h3 class="text-2xl font-bold mb-2">PettiApp</h3>
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h2 class="projects-title">Proyectos Destacados</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>PettiApp</h3>
           <img src="https://github.com/p3p3p3k4z/PettiApp/raw/main/info_proyecto/capturas/inicio.png" alt="PettiApp">
-          <p class="mb-4">Gestor de insumos para una cafetería</p>
-          <a href="#" class="text-green-400 hover:underline">Ver más</a>
+          <p>Gestor de insumos para una cafetería</p>
+          <a href="#">Ver más</a>
         </div>
-        <div class="p-5 bg-gray-800 rounded shadow">
-          <h3 class="text-2xl font-bold mb-2">Analisis de Algoritmos</h3>
+        <div class="project-card">
+          <h3>Analisis de Algoritmos</h3>
           <img src="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos/raw/main/preview/ventana_grafica.png" alt="Analisis de Algoritmos">
-          <p class="mb-4">Análisis para distintos tipos de algoritmos de ordenamiento</p>
-          <a href="#" class="text-green-400 hover:underline">Ver más</a>
+          <p>Análisis para distintos tipos de algoritmos de ordenamiento</p>
+          <a href="#">Ver más</a>
         </div>
-        <div class="p-5 bg-gray-800 rounded shadow">
-          <h3 class="text-2xl font-bold mb-2">Script Debian</h3>
+        <div class="project-card">
+          <h3>Script Debian</h3>
           <img src="https://github.com/p3p3p3k4z/script_Debian/raw/main/inicio.png" alt="Script Debian">
-          <p class="mb-4">Asistente para instalar/gestionar paquetes en sistemas Linux</p>
-          <a href="#" class="text-green-400 hover:underline">Ver más</a>
+          <p>Asistente para instalar/gestionar paquetes en sistemas Linux</p>
+          <a href="#">Ver más</a>
         </div>
       </div>
     </div>
   </section>
   
   <!-- Sección Contacto -->
-  <section id="contacto" class="p-10 text-center relative z-10">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-8">Contacto</h2>
-      <p class="text-lg">
-        Mi LinkedIn: <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" class="text-green-400 hover:underline" target="_blank">https://www.linkedin.com/in/mario-ramirez-abab9a318/</a>
-      </p>
-      <p class="text-lg">
-        Mi GitHub: <a href="https://github.com/p3p3p3k4z" class="text-green-400 hover:underline" target="_blank">https://github.com/p3p3p3k4z</a>
-      </p>
-      <p class="text-lg">
-        Puedes escribirme a: <a href="mailto:ragm030119@gs.utm.mx" class="text-green-400 hover:underline">ragm030119@gs.utm.mx</a>
-      </p>
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p class="contact-info">Mi LinkedIn: <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" target="_blank">Mario Ramirez</a></p>
+      <p class="contact-info">Mi GitHub: <a href="https://github.com/p3p3p3k4z" target="_blank">p3p3p3k4z</a></p>
+      <p class="contact-info">Puedes escribirme a: <a href="mailto:ragm030119@gs.utm.mx">ragm030119@gs.utm.mx</a></p>
     </div>
   </section>
+  
+  <script src="script.js"></script>
 </body>
 </html>
