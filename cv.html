@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum | Mario Ramírez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+  
+  <!-- Navbar -->
+  <nav class="p-5 bg-black bg-opacity-80 shadow-md flex items-center fixed w-full top-0 z-50">
+    <h1 class="text-xl font-bold">Mi Portafolio</h1>
+    <div class="ml-auto flex space-x-4">
+      <a href="index.html" class="p-2 hover:text-green-400">Regresar al Inicio</a>
+      <a href="cv.html" class="p-2 hover:text-green-400">Currículum</a>
+    </div>
+  </nav>
+
+  <!-- Sección CV -->
+  <section class="p-10 text-center mt-20">
+    <h2 class="text-4xl font-bold mb-4">Mi Currículum</h2>
+    <p class="mb-4">Puedes descargar mi currículum o verlo en línea.</p>
+    
+    <div class="flex justify-center space-x-4">
+      <a href="ruta-a-tu-cv.pdf" download="Mario_Ramirez_CV.pdf"
+         class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">
+         Descargar CV
+      </a>
+    </div>
+    
+    <div class="mt-6">
+      <iframe src="Currículum.pdf" width="80%" height="600px" class="border rounded-lg"></iframe>
+    </div>
+  </section>
+
+</body>
+</html>

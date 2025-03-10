@@ -2,7 +2,7 @@
 /*      ESTILOS GENERALES      */
 /* =========================== */
 body {
-    background-color: #111827; /* bg-gray-900 */
+    background-color: #111827; 
     color: #ffffff;
     position: relative;
     font-family: Arial, sans-serif;
@@ -14,9 +14,9 @@ body {
   /*           NAVBAR            */
   /* =========================== */
   nav {
-    padding: 1.25rem; /* p-5 */
-    background-color: rgba(0, 0, 0, 0.8); /* bg-black + bg-opacity-80 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    padding: 1.25rem; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     display: flex;
     align-items: center;
     position: fixed;
@@ -27,7 +27,7 @@ body {
   }
   
   nav h1 {
-    font-size: 1.25rem; /* text-xl */
+    font-size: 1.25rem; 
     font-weight: bold;
     margin: 0;
   }
@@ -35,18 +35,18 @@ body {
   .nav-links {
     margin-left: auto;
     display: flex;
-    gap: 1rem; /* space-x-4 */
+    gap: 1rem; 
   }
   
   nav a {
-    padding: 0.5rem; /* p-2 */
+    padding: 0.5rem; 
     text-decoration: none;
     color: #ffffff;
     transition: color 0.3s ease;
   }
   
   nav a:hover {
-    color: #34d399; /* hover:text-green-400 */
+    color: #34d399; 
   }
   
   /* =========================== */
@@ -90,24 +90,24 @@ body {
   }
   
   .text-section h1 {
-    font-size: 3rem; /* aproximadamente text-5xl */
+    font-size: 3rem; 
     font-weight: bold;
     margin-bottom: 1rem;
   }
   
   @media (min-width: 768px) {
     .text-section h1 {
-      font-size: 4.5rem; /* aproximadamente text-7xl */
+      font-size: 4.5rem; 
     }
   }
   
   .text-section p {
-    font-size: 1.25rem; /* text-xl */
+    font-size: 1.25rem; 
   }
   
   @media (min-width: 768px) {
     .text-section p {
-      font-size: 1.5rem; /* text-2xl */
+      font-size: 1.5rem;
     }
   }
   
@@ -125,7 +125,7 @@ body {
   }
   
   .gif-section img {
-    width: 16rem; /* w-64 */
+    width: 16rem; 
     height: auto;
   }
   
@@ -133,7 +133,7 @@ body {
   /*       SECCIONES GENERALES   */
   /* =========================== */
   .section {
-    padding: 2.5rem 1.25rem; /* p-10 */
+    padding: 2.5rem 1.25rem; 
     position: relative;
     z-index: 10;
     margin-top: 4rem; /* Para separar de la navbar fija */
@@ -146,29 +146,17 @@ body {
   }
   
   .section h2 {
-    font-size: 2.25rem; /* text-4xl */
+    font-size: 2.25rem; 
     font-weight: bold;
     margin-bottom: 2rem;
     text-align: center;
   }
   
   /* =========================== */
-  /*         SOBRE MÍ            */
-  /* =========================== */
-  #sobre-mi h2 {
-    text-align: left;
-  }
-  
-  #sobre-mi p {
-    text-align: left;
-    font-size: 1.125rem; /* text-lg */
-  }
-  
-  /* =========================== */
   /* EDUCACIÓN Y CERTIFICACIONES */
   /* =========================== */
   #educacion {
-    background-color: #1F2937; /* bg-gray-800 */
+    background-color: #1F2937; 
   }
   
   .button-group, .button-group * {
@@ -180,7 +168,7 @@ body {
   
   .edu-btn {
     padding: 0.5rem 1rem;
-    background-color: #34d399; /* bg-green-500 */
+    background-color: #34d399; 
     color: #ffffff;
     border: none;
     border-radius: 0.375rem;
@@ -189,7 +177,7 @@ body {
   }
   
   .edu-btn:hover {
-    background-color: #059669; /* hover:bg-green-600 */
+    background-color: #059669; 
   }
   
   /* Usamos la clase "hidden" de Tailwind para ocultar los contenedores */
@@ -222,7 +210,7 @@ body {
   }
   
   .subsection h3 {
-    font-size: 1.5rem; /* text-2xl */
+    font-size: 1.5rem; 
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: center;
@@ -238,9 +226,6 @@ body {
   /* =========================== */
   /*         PROYECTOS           */
   /* =========================== */
-  #proyectos h2 {
-    text-align: left;
-  }
   
   .projects-grid {
     display: grid;
@@ -262,13 +247,13 @@ body {
   
   .project-card {
     padding: 1.25rem;
-    background-color: #1F2937; /* bg-gray-800 */
+    background-color: #1F2937; 
     border-radius: 0.375rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .project-card h3 {
-    font-size: 1.5rem; /* text-2xl */
+    font-size: 1.5rem; 
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
@@ -313,3 +298,14 @@ body {
     color: #059669;
   }
   
+  /* =========================== */
+  /*         CV       		     */
+  /* =========================== */
+  
+iframe {
+  border: 2px solid #34d399;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
