@@ -47,9 +47,8 @@
       <h2 class="text-4xl font-bold text-center mb-8">Educación y Certificaciones</h2>
       <div class="flex justify-center space-x-4 mb-8">
         <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="utm">UTM</button>
-        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="hackatones">HACKATONES</button>
         <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="alura">ALURA</button>
-        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="platzi">PLATZI</button>
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="otros">otros</button>
       </div>
 
       <div id="utm" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -68,13 +67,6 @@
           <h3 class="font-bold">Taller Programacion basica en Python</h3>
           <img src="img/basico_python.png" alt="python">
           
-        </div>
-      </div>
-
-      <div id="hackatones" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-        <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Nasa Space Apps Challenge</h3>
-          <img src="img/nasa.png" alt="Cozabi">
         </div>
       </div>
 
@@ -117,7 +109,13 @@
         </div>
       </div>
 
-      <div id="platzi" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div id="otros" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <div class="bg-white text-black p-4 rounded shadow">
+          <h3 class="font-bold">Nasa Space Apps Challenge</h3>
+          <img src="img/nasa.png" alt="Cozabi">
+        </div>
+        
         <div class="bg-white text-black p-4 rounded shadow">
           <h3 class="font-bold">Fundamentos de Javascript</h3>
           <img src="img/javascript.png" alt="JS">
@@ -147,13 +145,15 @@
         <h3 class="text-2xl font-bold mb-4 text-center">Lenguajes</h3>
         <div class="flex flex-wrap justify-center gap-2">
           <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C">
-          <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+           <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+           <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
           <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
           <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
           <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
           <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
           <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
           <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+          <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
           <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
         </div>
       </div>
@@ -174,6 +174,8 @@
         <div class="flex flex-wrap justify-center gap-2">
           <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
           <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+          <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
+          <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js">
         </div>
       </div>
       
@@ -184,6 +186,7 @@
           <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
           <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
           <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+          <img src="https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white" alt="Godot Engine">
         </div>
       </div>
     </div>
@@ -195,6 +198,25 @@
 		<h2 class="text-4xl font-bold text-center mb-8">Proyectos Destacados</h2>
 		<div class="projects-grid">
 		  
+      <!-- Agenda AI-->
+		  <div class="project-card">
+        <h3>Agenda AI</h3>
+        <img src="https://github.com/p3p3p3k4z/Agenda-AI/raw/main/public/preview.png" alt="agendaAi">
+        <p> Aplicación web full-stack para la gestión de agendas personales, incorporando
+        funcionalidades de inteligencia artificial para optimizar la interacción y la organización del usuario.
+        </p>
+        <a href="https://github.com/p3p3p3k4z/Agenda-AI.git">Ver más</a>
+        </div>
+
+      <!-- Quiz App-->
+		  <div class="project-card">
+        <h3>Quiz App</h3>
+        <img src="https://github.com/p3p3p3k4z/quiz-app/raw/main/public/preview3.png" alt="quiz">
+        <p> Plataforma full-stack que usa IA para generar quizzes y feedback. 
+          Gestiona el rendimiento de alumnos y el seguimiento de profesores.</p>
+        <a href="https://github.com/p3p3p3k4z/quiz-app">Ver más</a>
+        </div>
+
 		  <!-- todo-list -->
 		  <div class="project-card">
         <h3>todo-list</h3>
@@ -214,6 +236,15 @@
 			Incluye visualización en tiempo real y gráficos comparativos.</p>
 			<a href="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos.git">Ver más</a>
 		  </div>
+
+      <!--procesador-->
+      <div class="project-card">
+        <h3>Procesador</h3>
+        <img src="https://github.com/p3p3p3k4z/Procesador/raw/instruccion_I_v2/captura_top.png" alt="PettiApp">
+        <p>Este es un proyecto para la materia de "Arquitectura de Computadoras".
+          Es un procesador de un ciclo, capaz de realizar pequeños programas. </p>
+        <a href="https://github.com/p3p3p3k4z/Procesador.git">Ver más</a>
+        </div>
 
 		  <!-- Script Debian -->
 		  <div class="project-card">
@@ -242,13 +273,12 @@
         <a href="https://github.com/p3p3p3k4z/PettiApp.git">Ver más</a>
         </div>
 
-      <!--procesador-->
-      <div class="project-card">
-        <h3>Procesador</h3>
-        <img src="https://github.com/p3p3p3k4z/Procesador/raw/instruccion_I_v2/captura_top.png" alt="PettiApp">
-        <p>Este es un proyecto para la materia de "Arquitectura de Computadoras".
-          Es un procesador de un ciclo, capaz de realizar pequeños programas. </p>
-        <a href="https://github.com/p3p3p3k4z/Procesador.git">Ver más</a>
+      <!-- Tiendita-->
+		  <div class="project-card">
+        <h3>Tienda de peluches</h3>
+        <img src="https://github.com/p3p3p3k4z/tiendita/raw/main/web/public/preview.png" alt="PettiApp">
+        <p>Mini tienda de peluches, con las funcionalidades basicas de una tienda online real</p>
+        <a href="https://github.com/p3p3p3k4z/tiendita.git">Ver más</a>
         </div>
 
 		</div>
