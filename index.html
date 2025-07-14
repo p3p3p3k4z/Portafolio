@@ -10,36 +10,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-900 text-white relative">
-  <!-- Navbar -->
-  <nav class="p-5 bg-black bg-opacity-80 shadow-md flex items-center">
-    <h1 class="text-xl font-bold">Mi Portafolio</h1>
-    <div class="ml-auto flex space-x-4">
-	  <a href="cv.html" class="p-2 hover:text-green-400">CV</a>
-      <a href="#inicio" class="p-2 hover:text-green-400">Inicio</a>
-      <a href="#educacion" class="p-2 hover:text-green-400">Educación</a>
-      <a href="#habilidades" class="p-2 hover:text-green-400">Habilidades</a>
-      <a href="#proyectos" class="p-2 hover:text-green-400">Proyectos</a>
-      <a href="#contacto" class="p-2 hover:text-green-400">Contacto</a>
-    </div>
-  </nav>
 
   <!-- Sección Inicio (Hero) -->
-  <section id="inicio" class="h-screen flex items-center justify-center relative z-10">
-    <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
-      <!-- Columna de texto (izquierda) -->
-      <div class="md:w-1/2 text-center md:text-left">
-		<h1 class="text-5xl md:text-7xl font-bold mb-4">¡Hola, soy Mario Ramírez!</h1>
-		<p class="text-xl md:text-2xl">
-		  Estudiante de Ingeniería en Computación. Actualmente, desarrollo pequeños proyectos para fortalecer mis habilidades en programación.  
-		  Me apasiona explorar nuevas tecnologías y estar en constante aprendizaje.
-		</p>
-      </div>
-      <!-- Columna del GIF (derecha) -->
-      <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
-        <img src="https://media.tenor.com/X6oLkn9sBewAAAAj/sparklepandalana-penguin.gif" alt="Gif de presentación" class="w-64 h-auto">
+<section id="inicio" class="h-screen flex items-center justify-center relative z-10">
+  <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">¡Hola, soy Mario Ramírez!</h1>
+      <p class="text-xl md:text-2x2 mb-10">
+       Estudiante de Ingeniería en Computación con una marcada afinidad por el ecosistema Linux 
+       y el desarrollo de software. Mi principal foco es el desarrollo web full-stack, donde disfruto construyendo soluciones funcionales y creativas. Estoy en constante búsqueda de nuevos desafíos que me permitan expandir mis conocimientos 
+       y habilidades, adaptándome a las tecnologías más innovadoras.
+      </p>
+
+      <div class="flex flex-col items-center md:items-start gap-4"> 
+        <div class="flex space-x-4">
+          <a href="https://github.com/p3p3p3k4z" target="_blank" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" class="w-8 h-8">
+          </a>
+          <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" target="_blank" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+          </a>
+          <a href="mailto:mario.ness64@gmail.com" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/email-sign.png" alt="Email" class="w-8 h-8">
+          </a>
+          </div>
+
+        <a href="cv.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out shadow-lg mt-4">
+          Ver mi CV
+        </a>
       </div>
     </div>
-  </section>
+    <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+      <img src="https://media.tenor.com/X6oLkn9sBewAAAAj/sparklepandalana-penguin.gif" alt="Gif de presentación" class="w-64 h-auto">
+    </div>
+  </div>
+</section>
   
   <!-- Sección Educación y Certificaciones -->
   <section id="educacion" class="p-10 relative z-10 bg-gray-800">
@@ -192,98 +197,137 @@
     </div>
   </section>
   
-  <!-- Sección Proyectos -->
-	<section id="proyectos" class="section">
-	  <div class="container">
-		<h2 class="text-4xl font-bold text-center mb-8">Proyectos Destacados</h2>
-		<div class="projects-grid">
-		  
-      <!-- Agenda AI-->
-		  <div class="project-card">
-        <h3>Agenda AI</h3>
-        <img src="https://github.com/p3p3p3k4z/Agenda-AI/raw/main/public/preview.png" alt="agendaAi">
-        <p> Aplicación web full-stack para la gestión de agendas personales, incorporando
-        funcionalidades de inteligencia artificial para optimizar la interacción y la organización del usuario.
-        </p>
-        <a href="https://github.com/p3p3p3k4z/Agenda-AI.git">Ver más</a>
+ <section id="proyectos" class="section">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-8">Proyectos Destacados</h2>
+    <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">Agenda AI</h3>
+        <img src="https://github.com/p3p3p3k4z/Agenda-AI/raw/main/public/preview.png" alt="agendaAi" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">TypeScript</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Next.js</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Tailwind CSS</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Prisma</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Redux</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Docker</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Gemini API</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Murf API</span>
         </div>
+        <p class="text-gray-300 mb-3">Aplicación web full-stack para la gestión de agendas personales, incorporando funcionalidades de inteligencia artificial para optimizar la interacción y la organización del usuario.</p>
+        <a href="https://github.com/p3p3p3k4z/Agenda-AI.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
 
-      <!-- Quiz App-->
-		  <div class="project-card">
-        <h3>Quiz App</h3>
-        <img src="https://github.com/p3p3p3k4z/quiz-app/raw/main/public/preview3.png" alt="quiz">
-        <p> Plataforma full-stack que usa IA para generar quizzes y feedback. 
-          Gestiona el rendimiento de alumnos y el seguimiento de profesores.</p>
-        <a href="https://github.com/p3p3p3k4z/quiz-app">Ver más</a>
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">Quiz App</h3>
+        <img src="https://github.com/p3p3p3k4z/quiz-app/raw/main/public/preview3.png" alt="quiz" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">CSS</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Typescript</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Node.js</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Express.js</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Docker</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">AI API</span>
         </div>
+        <p class="text-gray-300 mb-3">Plataforma full-stack que usa IA para generar quizzes y feedback. Gestiona el rendimiento de alumnos y el seguimiento de profesores.</p>
+        <a href="https://github.com/p3p3p3k4z/quiz-app" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
 
-		  <!-- todo-list -->
-		  <div class="project-card">
-        <h3>todo-list</h3>
-        <img src="https://github.com/p3p3p3k4z/todo-list/raw/main/data/img/TAREAS.png" alt="todo">
-        <p> Esta aplicación permite gestionar tareas a través de una interfaz de consola, 
-          una API web con FastAPI y una interfaz web con Flask. Las tareas se organizan en 
-          diferentes baúles (archivos JSON).
-        </p>
-        <a href="https://github.com/p3p3p3k4z/todo-list.git">Ver más</a>
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">todo-list</h3>
+        <img src="https://github.com/p3p3p3k4z/todo-list/raw/main/data/img/TAREAS.png" alt="todo" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Python</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">FastAPI</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Flask</span>
         </div>
+        <p class="text-gray-300 mb-3">Esta aplicación permite gestionar tareas a través de una interfaz de consola, una API web con FastAPI y una interfaz web con Flask. Las tareas se organizan en diferentes baúles (archivos JSON).</p>
+        <a href="https://github.com/p3p3p3k4z/todo-list.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
 
-		  <!-- Análisis de Algoritmos -->
-		  <div class="project-card">
-			<h3>Análisis de Algoritmos</h3>
-			<img src="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos/raw/main/preview/ventana_grafica.png" alt="Análisis de Algoritmos">
-			<p>Implementación de una herramienta en Python para analizar el rendimiento de distintos algoritmos de ordenamiento.  
-			Incluye visualización en tiempo real y gráficos comparativos.</p>
-			<a href="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos.git">Ver más</a>
-		  </div>
-
-      <!--procesador-->
-      <div class="project-card">
-        <h3>Procesador</h3>
-        <img src="https://github.com/p3p3p3k4z/Procesador/raw/instruccion_I_v2/captura_top.png" alt="PettiApp">
-        <p>Este es un proyecto para la materia de "Arquitectura de Computadoras".
-          Es un procesador de un ciclo, capaz de realizar pequeños programas. </p>
-        <a href="https://github.com/p3p3p3k4z/Procesador.git">Ver más</a>
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">Análisis de Algoritmos</h3>
+        <img src="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos/raw/main/preview/ventana_grafica.png" alt="Análisis de Algoritmos" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Python</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Pygame</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Matplotlib</span>
         </div>
+        <p class="text-gray-300 mb-3">Implementación de una herramienta en Python para analizar el rendimiento de distintos algoritmos de ordenamiento. Incluye visualización en tiempo real y gráficos comparativos.</p>
+        <a href="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
 
-		  <!-- Script Linux -->
-		  <div class="project-card">
-			<h3>Script Linux</h3>
-			<img src="https://github.com/p3p3p3k4z/script_Linux/raw/main/inicio.png" alt="Script Debian">
-			<p>Creación de un asistente automatizado para la instalación y gestión de paquetes en sistemas Linux,  
-			optimizando la configuración de entornos de desarrollo.</p>
-			<a href="https://github.com/p3p3p3k4z/script_Linux.git">Ver más</a>
-		  </div>
-
-		  <!-- Cozobi -->
-		  <div class="project-card">
-			<h3>Cozobi</h3>
-			<img src="https://f1oxyz.github.io/cozobi.github.io/assets/img/portfolio/logo%20copy.png" alt="Cozobi">
-			<p>Aplicación web que integra datos geoespaciales para mejorar la planificación agrícola y optimizar el uso de recursos.  
-			Desarrollada en el marco del NASA Space Apps Challenge.</p>
-			<a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nahual-code/?tab=project">Ver más</a>
-		  </div>
-
-       <!-- PettiApp -->
-		  <div class="project-card">
-        <h3>PettiApp</h3>
-        <img src="https://github.com/p3p3p3k4z/PettiApp/raw/main/info_proyecto/capturas/inicio.png" alt="PettiApp">
-        <p>Desarrollo de una aplicación web para la gestión eficiente de una cafeteria.  
-        Permite administrar inventarios y optimizar insumos.</p>
-        <a href="https://github.com/p3p3p3k4z/PettiApp.git">Ver más</a>
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">Procesador</h3>
+        <img src="https://github.com/p3p3p3k4z/Procesador/raw/instruccion_I_v2/captura_top.png" alt="Procesador" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">VHDL</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Digital Logic Design</span>
         </div>
+        <p class="text-gray-300 mb-3">Este es un proyecto para la materia de "Arquitectura de Computadoras". Es un procesador de un ciclo, capaz de realizar pequeños programas.</p>
+        <a href="https://github.com/p3p3p3k4z/Procesador.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
 
-      <!-- Tiendita-->
-		  <div class="project-card">
-        <h3>Tienda de peluches</h3>
-        <img src="https://github.com/p3p3p3k4z/tiendita/raw/main/web/public/preview.png" alt="PettiApp">
-        <p>Mini tienda de peluches, con las funcionalidades basicas de una tienda online real</p>
-        <a href="https://github.com/p3p3p3k4z/tiendita.git">Ver más</a>
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">Script Linux</h3>
+        <img src="https://github.com/p3p3p3k4z/script_Linux/raw/main/inicio.png" alt="Script Debian" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Bash</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Linux</span>
         </div>
+        <p class="text-gray-300 mb-3">Creación de un asistente automatizado para la instalación y gestión de paquetes en sistemas Linux, optimizando la configuración de entornos de desarrollo.</p>
+        <a href="https://github.com/p3p3p3k4z/script_Linux.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
 
-		</div>
-	  </div>
-	</section>
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">Cozobi</h3>
+        <img src="https://f1oxyz.github.io/cozobi.github.io/assets/img/portfolio/logo%20copy.png" alt="Cozobi" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">CSS</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">JavaScript</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Python</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">APIs Geoespaciales</span>
+        </div>
+        <p class="text-gray-300 mb-3">Aplicación web que integra datos geoespaciales para mejorar la planificación agrícola y optimizar el uso de recursos. Desarrollada en el marco del NASA Space Apps Challenge.</p>
+        <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nahual-code/?tab=project" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
+
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">PettiApp</h3>
+        <img src="https://github.com/p3p3p3k4z/PettiApp/raw/main/info_proyecto/capturas/inicio.png" alt="PettiApp" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">CSS</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">JavaScript</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">PHP</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">MySQL</span>
+        </div>
+        <p class="text-gray-300 mb-3">Desarrollo de una aplicación web para la gestión eficiente de una cafetería. Permite administrar inventarios y optimizar insumos.</p>
+        <a href="https://github.com/p3p3p3k4z/PettiApp.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
+
+      <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <h3 class="text-2xl font-bold mb-3">Tienda de peluches</h3>
+        <img src="https://github.com/p3p3p3k4z/tiendita/raw/main/web/public/preview.png" alt="Tienda de peluches" class="w-full h-48 object-cover rounded mb-2">
+        <div class="flex flex-wrap justify-center gap-2 mb-4">
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">CSS</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">JavaScript</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">React</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Node.js</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Express.js</span>
+          <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Docker</span>
+        </div>
+        <p class="text-gray-300 mb-3">Mini tienda de peluches, con las funcionalidades básicas de una tienda online real.</p>
+        <a href="https://github.com/p3p3p3k4z/tiendita.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Sección Contacto -->
   <section id="contacto" class="section contact-section">
@@ -291,7 +335,7 @@
       <h2>Contacto</h2>
       <p class="contact-info">Mi LinkedIn: <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" target="_blank">Mario Ramirez</a></p>
       <p class="contact-info">Mi GitHub: <a href="https://github.com/p3p3p3k4z" target="_blank">p3p3p3k4z</a></p>
-      <p class="contact-info">Puedes escribirme a: <a href="mailto:ragm030119@gs.utm.mx">ragm030119@gs.utm.mx</a></p>
+      <p class="contact-info">Puedes escribirme a: <a href="mailto:mario.ness64@gmail.com">mario.ness64@gmail.com</a></p>
     </div>
   </section>
   
