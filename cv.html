@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículum | Mario Ramírez</title>
+  <title id="cv-page-title">Currículum | Mario Ramírez</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-900 text-white">
+  <div class="fixed top-4 right-4 z-50">
+    <button id="lang-en" class="bg-gray-700 text-white px-2 py-1 rounded-l-lg hover:bg-gray-600 transition">EN</button>
+    <button id="lang-es" class="bg-gray-700 text-white px-2 py-1 rounded-r-lg hover:bg-gray-600 transition">ES</button>
+  </div>
 
-  <!-- Sección CV -->
   <section class="p-10 text-center mt-20">
-    <h2 class="text-4xl font-bold mb-4">Mi CV</h2>
-    <p class="mb-4">Puedes descargar mi currículum o verlo en línea.</p>
+    <h2 class="text-4xl font-bold mb-4" id="cv-title">Mi CV</h2>
+    <p class="mb-4" id="cv-subtitle">Puedes descargar mi currículum o verlo en línea.</p>
     
     <div class="flex justify-center space-x-4">
-      <a href="ruta-a-tu-cv.pdf" download="Mario_Ramirez_CV.pdf"
-         class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">
+      <a href="newcv.pdf" download="Mario_Ramirez_CV.pdf"
+         class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition" id="download-cv-button">
          Descargar CV
       </a>
     </div>
     
     <div class="mt-6">
-      <iframe src="newcv.pdf" width="80%" height="600px" class="border rounded-lg"></iframe>
+      <iframe src="newcv.pdf" width="80%" height="600px" class="border rounded-lg" id="cv-iframe"></iframe>
     </div>
   </section>
 
  <div class="flex justify-center w-full mt-8">
     <a href="index.html"
-      class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition text-center">
+      class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition text-center" id="return-home-button">
       Regresa al inicio
     </a>
 </div>
 
-
+<script src="script.js"></script>
 </body>
 </html>

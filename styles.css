@@ -166,7 +166,7 @@ body {
   
   .edu-btn {
     padding: 0.5rem 1rem;
-    background-color: #34d399; 
+    background-color: #059669;
     color: #ffffff;
     border: none;
     border-radius: 0.375rem;
@@ -261,7 +261,7 @@ body {
   }
   
   .project-card a {
-    color: #34d399;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
   }

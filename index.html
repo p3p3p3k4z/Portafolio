@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio ^^</title>
+  <title id="title">My Portfolio ^^</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/img/icon-tux.png" type="image/png">
   </head>
 <body class="bg-gray-900 text-white relative">
+  <div class="fixed top-4 right-4 z-50">
+    <button id="lang-en" class="bg-gray-700 text-white px-2 py-1 rounded-l-lg hover:bg-gray-600 transition">EN</button>
+    <button id="lang-es" class="bg-gray-700 text-white px-2 py-1 rounded-r-lg hover:bg-gray-600 transition">ES</button>
+  </div>
 
-  <!-- Sección Inicio (Hero) -->
-<section id="inicio" class="flex items-center justify-center relative z-10 md:h-screen">
+  <section id="inicio" class="flex items-center justify-center relative z-10 md:h-screen">
   <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
     <div class="md:w-1/2 text-center md:text-left">
-      <h1 class="text-5xl md:text-7xl font-bold mb-4">¡Hola, soy Mario Ramírez!</h1>
-      <p class="text-xl md:text-2x2 mb-10">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4" id="hero-title">¡Hola, soy Mario Ramírez!</h1>
+      <p class="text-xl md:text-2x2 mb-10" id="hero-description">
       Estudiante de Ingeniería en Computación con sólidas habilidades en Linux, 
       me he centrado en el desarrollo web full-stack, transformando ideas en aplicaciones prácticas. 
       Para fortalecer mis habilidades en programación, desarrollo proyectos personales y académicos, siempre con un firme interés en explorar nuevas tecnologías y el aprendizaje continuo.
@@ -29,12 +32,12 @@
           <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" target="_blank" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
             <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-8 h-8">
           </a>
-          <a href="mailto:mario.ness64@gmail.com" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+          <a href="mailto:ragm030119@gs.utm.mx" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
             <img src="https://img.icons8.com/ios-filled/50/ffffff/email-sign.png" alt="Email" class="w-8 h-8">
           </a>
           </div>
 
-        <a href="cv.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out shadow-lg mt-4">
+        <a href="cv.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out shadow-lg mt-4" id="cv-button">
           Ver mi CV
         </a>
       </div>
@@ -45,30 +48,29 @@
   </div>
 </section>
   
-  <!-- Sección Educación y Certificaciones -->
   <section id="educacion" class="p-10 relative z-10 bg-gray-800">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-8">Educación y Certificaciones</h2>
+      <h2 class="text-4xl font-bold text-center mb-8" id="education-title">Educación y Certificaciones</h2>
       <div class="flex justify-center space-x-4 mb-8">
-        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="utm">UTM</button>
-        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="alura">ALURA</button>
-        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="otros">OTROS</button>
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="utm" id="btn-utm">UTM</button>
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="alura" id="btn-alura">ALURA</button>
+        <button class="edu-btn px-4 py-2 bg-green-500 hover:bg-green-600 rounded" data-target="otros" id="btn-others">OTROS</button>
       </div>
 
       <div id="utm" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Curso Sistema Operativo GNU/Linux. Nivel Basico</h3>
+          <h3 class="font-bold" id="utm-cert1">Curso Sistema Operativo GNU/Linux. Nivel Basico</h3>
           <img src="img/linux.png" alt="Linux">
           
         </div>
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Taller Uso del lenguaje SPARQL para generar y consultar datos abiertos</h3>
+          <h3 class="font-bold" id="utm-cert2">Taller Uso del lenguaje SPARQL para generar y consultar datos abiertos</h3>
           <img src="img/sparql.png" alt="SPARQL">
           
         </div>
         
        <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Taller Programacion basica en Python</h3>
+          <h3 class="font-bold" id="utm-cert3">Taller Programacion basica en Python</h3>
           <img src="img/basico_python.png" alt="python">
           
         </div>
@@ -77,44 +79,44 @@
       <div id="alura" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
         
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Certificación OCI Foundations Associate - ONE</h3>
-		  <a href="https://app.aluracursos.com/user/mario-ness64/degree-certificacion-oci-one-16006/certificate">Ver Certificado</a>
-		  <img src="img/alura7.jpg" alt="alura7">
-        </div> 	
+          <h3 class="font-bold" id="alura-cert1">Certificación OCI Foundations Associate - ONE</h3>
+      <a href="https://app.aluracursos.com/user/mario-ness64/degree-certificacion-oci-one-16006/certificate" id="alura-link1">Ver Certificado</a>
+      <img src="img/alura7.jpg" alt="alura7">
+        </div>  
 
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">SQL con MySQL Server de Oracle - ONE</h3>
-		  <a href="https://app.aluracursos.com/degree/certificate/609e0b6d-1b25-418c-8886-1dcdd6edee0e?lang">Ver Certificado</a>
-		  <img src="img/alura6.jpeg" alt="alura6">
-        </div> 	
+          <h3 class="font-bold" id="alura-cert2">SQL con MySQL Server de Oracle - ONE</h3>
+      <a href="https://app.aluracursos.com/degree/certificate/609e0b6d-1b25-418c-8886-1dcdd6edee0e?lang" id="alura-link2">Ver Certificado</a>
+      <img src="img/alura6.jpeg" alt="alura6">
+        </div>  
         
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Programa Oracle Next Education F2 T7 Back-end</h3>
-		  <a href="https://app.aluracursos.com/program/certificate/15dc312c-052e-468b-b6b5-71ee9b5fdbc3?lang">Ver Certificado</a>
-		  <img src="img/alura5.png" alt="alura5">
-        </div> 		  
+          <h3 class="font-bold" id="alura-cert3">Programa Oracle Next Education F2 T7 Back-end</h3>
+      <a href="https://app.aluracursos.com/program/certificate/15dc312c-052e-468b-b6b5-71ee9b5fdbc3?lang" id="alura-link3">Ver Certificado</a>
+      <img src="img/alura5.png" alt="alura5">
+        </div>      
         
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Formación Inteligencia Artificial y Java G7 - ONE</h3>
-		  <a href="https://app.aluracursos.com/degree/certificate/98c2ab2a-2e16-4c7b-b94d-71354133bf3e?lang">Ver Certificado</a>
-		  <img src="img/alura4.png" alt="alura4">
-        </div> 		         
-		  	
+          <h3 class="font-bold" id="alura-cert4">Formación Inteligencia Artificial y Java G7 - ONE</h3>
+      <a href="https://app.aluracursos.com/degree/certificate/98c2ab2a-2e16-4c7b-b94d-71354133bf3e?lang" id="alura-link4">Ver Certificado</a>
+      <img src="img/alura4.png" alt="alura4">
+        </div>             
+        
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Formación Java y Spring Framework G7 - ONE</h3>
-		  <a href="https://app.aluracursos.com/degree/certificate/a0c78257-27e0-4cfc-9a68-a7709755a062?lang">Ver Certificado</a>
-		  <img src="img/alura3.png" alt="alura3">
+          <h3 class="font-bold" id="alura-cert5">Formación Java y Spring Framework G7 - ONE</h3>
+      <a href="https://app.aluracursos.com/degree/certificate/a0c78257-27e0-4cfc-9a68-a7709755a062?lang" id="alura-link5">Ver Certificado</a>
+      <img src="img/alura3.png" alt="alura3">
         </div> 
-		 
+     
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Formación Java Orientado a Objetos G7 - ONE</h3>
-		  <a href="https://app.aluracursos.com/degree/certificate/1ea4977e-e25a-4c93-8d01-2de5f96c93b5?lang">Ver Certificado</a>
-		  <img src="img/alura2.png" alt="alura2">
+          <h3 class="font-bold" id="alura-cert6">Formación Java Orientado a Objetos G7 - ONE</h3>
+      <a href="https://app.aluracursos.com/degree/certificate/1ea4977e-e25a-4c93-8d01-2de5f96c93b5?lang" id="alura-link6">Ver Certificado</a>
+      <img src="img/alura2.png" alt="alura2">
         </div>
       <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Formación Principiante en Programación G7 - ONE</h3>
-          <a href="https://app.aluracursos.com/degree/certificate/f0e7675e-722c-4c34-abe9-2dff5987ef1a?lang">Ver Certificado</a>
-		  <img src="img/alura1.png" alt="alura1">
+          <h3 class="font-bold" id="alura-cert7">Formación Principiante en Programación G7 - ONE</h3>
+          <a href="https://app.aluracursos.com/degree/certificate/f0e7675e-722c-4c34-abe9-2dff5987ef1a?lang" id="alura-link7">Ver Certificado</a>
+      <img src="img/alura1.png" alt="alura1">
   
         </div>
       </div>
@@ -122,26 +124,26 @@
       <div id="otros" class="edu-cards hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Oracle Certified Foundations Associate</h3>
+          <h3 class="font-bold" id="other-cert1">Oracle Certified Foundations Associate</h3>
           <img src="img/eCertificate.jpg" alt="OCI">
         </div>
 
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Nasa Space Apps Challenge</h3>
+          <h3 class="font-bold" id="other-cert2">Nasa Space Apps Challenge</h3>
           <img src="img/nasa.png" alt="Cozabi">
         </div>
         
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Fundamentos de Javascript</h3>
+          <h3 class="font-bold" id="other-cert3">Fundamentos de Javascript</h3>
           <img src="img/javascript.png" alt="JS">
         </div>
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Backend con Node.JS: Api Rest con express.JS</h3>
+          <h3 class="font-bold" id="other-cert4">Backend con Node.JS: Api Rest con express.JS</h3>
           <img src="img/express.png" alt="JS">
         </div>
 
         <div class="bg-white text-black p-4 rounded shadow">
-          <h3 class="font-bold">Curso de React.JS</h3>
+          <h3 class="font-bold" id="other-cert5">Curso de React.JS</h3>
           <img src="img/react.jpeg" alt="JS">
         </div>
 
@@ -150,14 +152,12 @@
     </div>
   </section>
   
-  <!-- Sección Habilidades Técnicas -->
   <section id="habilidades" class="p-10 relative z-10">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-8">Habilidades Técnicas</h2>
+      <h2 class="text-4xl font-bold text-center mb-8" id="skills-title">Habilidades Técnicas</h2>
       
-      <!-- Lenguajes -->
       <div class="mb-8">
-        <h3 class="text-2xl font-bold mb-4 text-center">Lenguajes</h3>
+        <h3 class="text-2xl font-bold mb-4 text-center" id="lang-subtitle">Lenguajes</h3>
         <div class="flex flex-wrap justify-center gap-2">
           <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C">
            <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
@@ -170,12 +170,12 @@
           <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
           <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
           <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+          <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
         </div>
       </div>
       
-      <!-- Bases de Datos -->
       <div class="mb-8">
-        <h3 class="text-2xl font-bold mb-4 text-center">Bases de Datos</h3>
+        <h3 class="text-2xl font-bold mb-4 text-center" id="db-subtitle">Bases de Datos</h3>
         <div class="flex flex-wrap justify-center gap-2">
           <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
           <img src="https://img.shields.io/badge/phpMyAdmin-FF6B6B?style=for-the-badge&logo=php&logoColor=white" alt="phpMyAdmin">
@@ -183,9 +183,8 @@
         </div>
       </div>
       
-      <!-- Frameworks y Librerías -->
       <div class="mb-8">
-        <h3 class="text-2xl font-bold mb-4 text-center">Frameworks y Librerías</h3>
+        <h3 class="text-2xl font-bold mb-4 text-center" id="frameworks-subtitle">Frameworks y Librerías</h3>
         <div class="flex flex-wrap justify-center gap-2">
           <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot">
           <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
@@ -194,9 +193,8 @@
         </div>
       </div>
       
-      <!-- Herramientas -->
       <div class="subsection">
-        <h3 class="text-2xl font-bold mb-4 text-center">Herramientas</h3>
+        <h3 class="text-2xl font-bold mb-4 text-center" id="tools-subtitle">Herramientas</h3>
         <div class="badges-group">
           <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
           <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
@@ -209,11 +207,11 @@
   
  <section id="proyectos" class="section">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-8">Proyectos Destacados</h2>
+    <h2 class="text-4xl font-bold text-center mb-8" id="projects-title">Proyectos Destacados</h2>
     <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">Agenda AI</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj1-title">Agenda AI</h3>
         <img src="https://github.com/p3p3p3k4z/Agenda-AI/raw/main/public/preview.png" alt="agendaAi" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">TypeScript</span>
@@ -225,12 +223,12 @@
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Gemini API</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Murf API</span>
         </div>
-        <p class="text-gray-300 mb-3">Aplicación web full-stack para la gestión de agendas personales, incorporando funcionalidades de inteligencia artificial para optimizar la interacción y la organización del usuario.</p>
-        <a href="https://github.com/p3p3p3k4z/Agenda-AI.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj1-desc">Aplicación web full-stack para la gestión de agendas personales, incorporando funcionalidades de inteligencia artificial para optimizar la interacción y la organización del usuario.</p>
+        <a href="https://github.com/p3p3p3k4z/Agenda-AI.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj1-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">Quiz App</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj2-title">Quiz App</h3>
         <img src="https://github.com/p3p3p3k4z/quiz-app/raw/main/public/preview3.png" alt="quiz" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
@@ -241,58 +239,58 @@
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Docker</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">AI API</span>
         </div>
-        <p class="text-gray-300 mb-3">Plataforma full-stack que usa IA para generar quizzes y feedback. Gestiona el rendimiento de alumnos y el seguimiento de profesores.</p>
-        <a href="https://github.com/p3p3p3k4z/quiz-app" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj2-desc">Plataforma full-stack que usa IA para generar quizzes y feedback. Gestiona el rendimiento de alumnos y el seguimiento de profesores.</p>
+        <a href="https://github.com/p3p3p3k4z/quiz-app" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj2-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">todo-list</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj3-title">todo-list</h3>
         <img src="https://github.com/p3p3p3k4z/todo-list/raw/main/data/img/TAREAS.png" alt="todo" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Python</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">FastAPI</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Flask</span>
         </div>
-        <p class="text-gray-300 mb-3">Esta aplicación permite gestionar tareas a través de una interfaz de consola, una API web con FastAPI y una interfaz web con Flask. Las tareas se organizan en diferentes baúles (archivos JSON).</p>
-        <a href="https://github.com/p3p3p3k4z/todo-list.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj3-desc">Esta aplicación permite gestionar tareas a través de una interfaz de consola, una API web con FastAPI y una interfaz web con Flask. Las tareas se organizan en diferentes baúles (archivos JSON).</p>
+        <a href="https://github.com/p3p3p3k4z/todo-list.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj3-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">Análisis de Algoritmos</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj4-title">Análisis de Algoritmos</h3>
         <img src="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos/raw/main/preview/ventana_grafica.png" alt="Análisis de Algoritmos" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Python</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Pygame</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Matplotlib</span>
         </div>
-        <p class="text-gray-300 mb-3">Implementación de una herramienta en Python para analizar el rendimiento de distintos algoritmos de ordenamiento. Incluye visualización en tiempo real y gráficos comparativos.</p>
-        <a href="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj4-desc">Implementación de una herramienta en Python para analizar el rendimiento de distintos algoritmos de ordenamiento. Incluye visualización en tiempo real y gráficos comparativos.</p>
+        <a href="https://github.com/p3p3p3k4z/Proyecto-Ordenamientos.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj4-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">Procesador</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj5-title">Procesador</h3>
         <img src="https://github.com/p3p3p3k4z/Procesador/raw/instruccion_I_v2/captura_top.png" alt="Procesador" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">VHDL</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Digital Logic Design</span>
         </div>
-        <p class="text-gray-300 mb-3">Este es un proyecto para la materia de "Arquitectura de Computadoras". Es un procesador de un ciclo, capaz de realizar pequeños programas.</p>
-        <a href="https://github.com/p3p3p3k4z/Procesador.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj5-desc">Este es un proyecto para la materia de "Arquitectura de Computadoras". Es un procesador de un ciclo, capaz de realizar pequeños programas.</p>
+        <a href="https://github.com/p3p3p3k4z/Procesador.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj5-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">Script Linux</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj6-title">Script Linux</h3>
         <img src="https://github.com/p3p3p3k4z/script_Linux/raw/main/inicio.png" alt="Script Debian" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Bash</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Linux</span>
         </div>
-        <p class="text-gray-300 mb-3">Creación de un asistente automatizado para la instalación y gestión de paquetes en sistemas Linux, optimizando la configuración de entornos de desarrollo.</p>
-        <a href="https://github.com/p3p3p3k4z/script_Linux.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj6-desc">Creación de un asistente automatizado para la instalación y gestión de paquetes en sistemas Linux, optimizando la configuración de entornos de desarrollo.</p>
+        <a href="https://github.com/p3p3p3k4z/script_Linux.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj6-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">Cozobi</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj7-title">Cozobi</h3>
         <img src="https://f1oxyz.github.io/cozobi.github.io/assets/img/portfolio/logo%20copy.png" alt="Cozobi" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
@@ -301,12 +299,12 @@
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Python</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">APIs Geoespaciales</span>
         </div>
-        <p class="text-gray-300 mb-3">Aplicación web que integra datos geoespaciales para mejorar la planificación agrícola y optimizar el uso de recursos. Desarrollada en el marco del NASA Space Apps Challenge.</p>
-        <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nahual-code/?tab=project" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj7-desc">Aplicación web que integra datos geoespaciales para mejorar la planificación agrícola y optimizar el uso de recursos. Desarrollada en el marco del NASA Space Apps Challenge.</p>
+        <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nahual-code/?tab=project" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj7-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">PettiApp</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj8-title">PettiApp</h3>
         <img src="https://github.com/p3p3p3k4z/PettiApp/raw/main/info_proyecto/capturas/inicio.png" alt="PettiApp" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
@@ -315,12 +313,12 @@
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">PHP</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">MySQL</span>
         </div>
-        <p class="text-gray-300 mb-3">Desarrollo de una aplicación web para la gestión eficiente de una cafetería. Permite administrar inventarios y optimizar insumos.</p>
-        <a href="https://github.com/p3p3p3k4z/PettiApp.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj8-desc">Desarrollo de una aplicación web para la gestión eficiente de una cafetería. Permite administrar inventarios y optimizar insumos.</p>
+        <a href="https://github.com/p3p3p3k4z/PettiApp.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj8-link">Ver más</a>
       </div>
 
       <div class="project-card bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-        <h3 class="text-2xl font-bold mb-3">Tienda de peluches</h3>
+        <h3 class="text-2xl font-bold mb-3" id="proj9-title">Tienda de peluches</h3>
         <img src="https://github.com/p3p3p3k4z/tiendita/raw/main/web/public/preview.png" alt="Tienda de peluches" class="w-full h-48 object-cover rounded mb-2">
         <div class="flex flex-wrap justify-center gap-2 mb-4">
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">HTML</span>
@@ -331,21 +329,20 @@
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Express.js</span>
           <span class="bg-white/10 text-white text-xs px-2 py-1 rounded border border-gray-600">Docker</span>
         </div>
-        <p class="text-gray-300 mb-3">Mini tienda de peluches, con las funcionalidades básicas de una tienda online real.</p>
-        <a href="https://github.com/p3p3p3k4z/tiendita.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">Ver más</a>
+        <p class="text-gray-300 mb-3" id="proj9-desc">Mini tienda de peluches, con las funcionalidades básicas de una tienda online real.</p>
+        <a href="https://github.com/p3p3p3k4z/tiendita.git" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="proj9-link">Ver más</a>
       </div>
 
     </div>
   </div>
 </section>
 
-  <!-- Sección Contacto -->
   <section id="contacto" class="section contact-section">
     <div class="container">
-      <h2>Contacto</h2>
-      <p class="contact-info">Mi LinkedIn: <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" target="_blank">Mario Ramirez</a></p>
-      <p class="contact-info">Mi GitHub: <a href="https://github.com/p3p3p3k4z" target="_blank">p3p3p3k4z</a></p>
-      <p class="contact-info">Puedes escribirme a: <a href="mailto:mario.ness64@gmail.com">mario.ness64@gmail.com</a></p>
+      <h2 id="contact-title">Contacto</h2>
+      <p class="contact-info" id="contact-linkedin">Mi LinkedIn: <a href="https://www.linkedin.com/in/mario-ramirez-abab9a318/" target="_blank">Mario Ramirez</a></p>
+      <p class="contact-info" id="contact-github">Mi GitHub: <a href="https://github.com/p3p3p3k4z" target="_blank">p3p3p3k4z</a></p>
+      <p class="contact-info" id="contact-email">Puedes escribirme a: <a href="mailto:ragm030119@gs.utm.mx">ragm030119@gs.utm.mx</a></p>
     </div>
   </section>
   
